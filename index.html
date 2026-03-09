@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>weather app</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <form class="search-form-input" id="search-form">
+          <input
+            type="search"
+            id="city"
+            placeholder="Enter a city..."
+            required
+            class="searchCity"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-temperature">
+          <div>
+            <h1 class="weather-city" id="weather-city"></h1>
+
+            <p class="weather-details">
+              <span id="time"></span>, <span id="weather-description"></span>
+              <br />
+              Humidity:
+              <span class="humidity"><strong id="humidity"></strong></span>,
+              Wind:<span class="windSpeed"><strong id="speed"> </strong></span>
+            </p>
+          </div>
+          <div class="weather-app-temperature">
+            <div>
+              <div id="weather-icon"></div>
+            </div>
+            <div
+              class="weather-current-temperature"
+              id="weather-current-temperature"
+            ></div>
+            <div class="temperature-unit">°C</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a
+          href="https://github.com/albamarroschmitt?tab=repositories"
+          target="_blank"
+          >Alba Marro</a
+        >, is open-sourced on
+        <a
+          href="https://github.com/albamarroschmitt/weather_forecast"
+          target="_blank"
+          >Github</a
+        >
+        and hosted on
+        <a
+          href="https://myweatherforecastappshecodes.netlify.app/"
+          target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
